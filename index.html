@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carol Carvalho Assessoria e Projetos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        yellow: {
+                            500: '#B88978',
+                            600: '#A65D45',
+                            700: '#874632'
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .font-display { font-family: 'Playfair Display', serif; }
+        .text-ouro { color: #B88978; }
+        .text-rosa { color: #B88978; }
+        .bg-rosa { background-color: #A65D45; }
+        .border-ouro { border: 2px solid #B88978; }
+        .hover-lift:hover { transform: translateY(-4px); }
+    </style>
+</head>
+<body class="bg-black">
+    <!-- Header Luxuoso -->
+    <header class="fixed w-full top-0 z-50 bg-black/80 backdrop-blur-lg border-b border-yellow-600/20">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div>
+                    <h1 class="text-white font-display text-2xl font-bold">Carol Carvalho</h1>
+                    <p class="text-yellow-600 text-xs tracking-widest">ASSESSORIA E PROJETOS</p>
+                </div>
+            </div>
+
+            <nav class="hidden md:flex gap-8 text-sm">
+                <a href="#servicos" class="text-gray-300 hover:text-yellow-600 transition">Serviços</a>
+                <a href="#portfolio" class="text-gray-300 hover:text-yellow-600 transition">Portfólio</a>
+                <a href="#faq" class="text-gray-300 hover:text-yellow-600 transition">FAQ</a>
+                <a href="#contato" class="text-gray-300 hover:text-yellow-600 transition">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Sofisticado -->
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="profile-photo mx-auto mb-8">
+                <img src="img/foto carol.jpeg" alt="Carol Carvalho" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+                <div class="hidden profile-photo-placeholder">Sua foto aqui</div>
+            </div>
+            <p class="text-yellow-600 text-xs tracking-[0.3em] uppercase mb-4">Assessoria estratégica</p>
+            <h1 class="font-display text-5xl md:text-7xl text-white mb-6 leading-tight">
+                Presença digital que <span class="text-yellow-600">gera resultado.</span>
+            </h1>
+            <p class="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-12">
+                Estratégias claras, presença marcante e projetos digitais pensados para transformar sua marca.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contato" class="bg-yellow-600 hover:bg-yellow-700 text-black px-10 py-4 rounded-lg font-semibold transition">
+                    Agendar Consulta
+                </a>
+                <a href="https://wa.me/5563981298018" class="border-2 border-yellow-600 text-yellow-600 hover:bg-yellow-600/10 px-10 py-4 rounded-lg font-semibold transition">
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Premium -->
+    <section id="servicos" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <p class="text-yellow-600 text-xs tracking-[0.3em] uppercase mb-4">Presença digital</p>
+                <h2 class="font-display text-5xl text-white mb-4">Que gera resultado.</h2>
+                <div class="w-20 h-1 bg-yellow-600 mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Serviço 1 -->
+                <div class="bg-gray-900/50 border border-yellow-600/30 rounded-lg p-8 hover-lift transition group">
+                    <div class="w-14 h-14 bg-yellow-600/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-600 transition">
+                        <i class="fas fa-chart-line text-yellow-600 text-2xl group-hover:text-black transition"></i>
+                    </div>
+                    <h3 class="text-white font-display text-2xl mb-3">Tráfego Pago e Marketing de Conteúdo</h3>
+                    <p class="text-gray-400 mb-4">Campanhas no Meta Ads e Google Ads, unidas a conteúdos que atraem os clientes certos e fortalecem sua marca.</p>
+                    <div class="flex items-center text-yellow-600 group-hover:text-yellow-500">
+                        <button type="button" data-service="trafego-pago" class="text-sm font-semibold flex items-center gap-2 focus:outline-none">
+                            <span>Saiba mais</span>
+                            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Serviço 2 -->
+                <div class="bg-gray-900/50 border border-yellow-600/30 rounded-lg p-8 hover-lift transition group">
+                    <div class="w-14 h-14 bg-yellow-600/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-600 transition">
+                        <i class="fas fa-globe text-yellow-600 text-2xl group-hover:text-black transition"></i>
+                    </div>
+                    <h3 class="text-white font-display text-2xl mb-3">Sites & Landing Pages</h3>
+                    <p class="text-gray-400 mb-4">Sites rápidos, responsivos e focados em conversão. Você apresenta, o cliente fecha.</p>
+                    <div class="flex items-center text-yellow-600 group-hover:text-yellow-500">
+                        <button type="button" data-service="sites-landing-pages" class="text-sm font-semibold flex items-center gap-2 focus:outline-none">
+                            <span>Saiba mais</span>
+                            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Serviço 4 -->
+                <div class="bg-gray-900/50 border border-yellow-600/30 rounded-lg p-8 hover-lift transition group">
+                    <div class="w-14 h-14 bg-yellow-600/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-600 transition">
+                        <i class="fas fa-map-location-dot text-yellow-600 text-2xl group-hover:text-black transition"></i>
+                    </div>
+                    <h3 class="text-white font-display text-2xl mb-3">SEO Local & GMN</h3>
+                    <p class="text-gray-400 mb-4">Seu negócio aparecendo nas buscas da sua cidade. Google Meu Negócio configurado e otimizado.</p>
+                    <div class="flex items-center text-yellow-600 group-hover:text-yellow-500">
+                        <button type="button" data-service="seo-gmn" class="text-sm font-semibold flex items-center gap-2 focus:outline-none">
+                            <span>Saiba mais</span>
+                            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Serviço 5 -->
+                <div class="bg-gray-900/50 border border-yellow-600/30 rounded-lg p-8 hover-lift transition group">
+                    <div class="w-14 h-14 bg-yellow-600/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-600 transition">
+                        <i class="fas fa-chart-pie text-yellow-600 text-2xl group-hover:text-black transition"></i>
+                    </div>
+                    <h3 class="text-white font-display text-2xl mb-3">GA4 & Rastreamento</h3>
+                    <p class="text-gray-400 mb-4">Configuração e acompanhamento dos dados para entender o comportamento dos visitantes.</p>
+                    <div class="flex items-center text-yellow-600 group-hover:text-yellow-500">
+                        <button type="button" data-service="ga4-rastreamento" class="text-sm font-semibold flex items-center gap-2 focus:outline-none">
+                            <span>Saiba mais</span>
+                            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Serviço 5 -->
+                <div class="bg-gray-900/50 border border-yellow-600/30 rounded-lg p-8 hover-lift transition group">
+                    <div class="w-14 h-14 bg-yellow-600/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-600 transition">
+                        <i class="fas fa-file-chart-column text-yellow-600 text-2xl group-hover:text-black transition"></i>
+                    </div>
+                    <h3 class="text-white font-display text-2xl mb-3">Relatórios de Performance</h3>
+                    <p class="text-gray-400 mb-4">Painel visual no Looker Studio + relatório mensal em PDF. Dados claros, decisões melhores.</p>
+                    <div class="flex items-center text-yellow-600 group-hover:text-yellow-500">
+                        <button type="button" data-service="relatorios-performance" class="text-sm font-semibold flex items-center gap-2 focus:outline-none">
+                            <span>Saiba mais</span>
+                            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Serviço 6 -->
+                <div class="bg-gray-900/50 border border-yellow-600/30 rounded-lg p-8 hover-lift transition group">
+                    <div class="w-14 h-14 bg-yellow-600/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-600 transition">
+                        <i class="fas fa-diagram-project text-yellow-600 text-2xl group-hover:text-black transition"></i>
+                    </div>
+                    <h3 class="text-white font-display text-2xl mb-3">Implementação de CRM</h3>
+                    <p class="text-gray-400 mb-4">Organização do atendimento, vendas e relacionamento para sua equipe trabalhar com mais eficiência.</p>
+                    <div class="flex items-center text-yellow-600 group-hover:text-yellow-500">
+                        <button type="button" data-service="implementacao-crm" class="text-sm font-semibold flex items-center gap-2 focus:outline-none">
+                            <span>Saiba mais</span>
+                            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfólio -->
+    <section id="portfolio" class="py-24 px-6 bg-gray-950/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <p class="text-yellow-600 text-xs tracking-[0.3em] uppercase mb-4">Trabalhos Realizados</p>
+                <h2 class="font-display text-5xl text-white mb-4">Nosso Portfólio</h2>
+                <div class="w-20 h-1 bg-yellow-600 mx-auto"></div>
+            </div>
+
+            <div class="max-w-6xl mx-auto">
+                <div class="relative aspect-video overflow-hidden rounded-2xl border border-yellow-600/40 bg-gray-950 shadow-2xl">
+                    <iframe class="h-full w-full border-0 bg-white" src="https://www.valfreireestetica.com.br" title="Site da Val Freire Estética" loading="lazy"></iframe>
+                    <div class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent px-6 pb-6 pt-16">
+                        <p class="text-xs uppercase tracking-[0.3em] text-yellow-600">Painel de projetos</p>
+                        <p class="mt-2 text-lg text-white md:text-2xl">Val Freire Estética</p>
+                    </div>
+                </div>
+
+                <div class="mt-4 text-center">
+                    <a href="https://www.valfreireestetica.com.br" target="_blank" rel="noopener noreferrer" class="text-sm text-yellow-600 hover:text-yellow-500">
+                        Visitar site completo <i class="fas fa-arrow-up-right-from-square ml-1"></i>
+                    </a>
+                </div>
+
+                <div class="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-gray-400">
+                    <a href="https://kenyacaroline-eng.github.io/seisnaestrada/" target="_blank" rel="noopener noreferrer" class="portfolio-trigger hover:text-yellow-600 focus:outline-none">
+                        Seis na Estrada <i class="fas fa-arrow-up-right-from-square ml-1 text-xs"></i>
+                    </a>
+                    <button type="button" data-portfolio="ecommerce" class="portfolio-trigger hover:text-yellow-600 focus:outline-none">E-commerce B2B</button>
+                    <button type="button" data-portfolio="salao" class="portfolio-trigger hover:text-yellow-600 focus:outline-none">Salão de Beleza</button>
+                    <button type="button" data-portfolio="academia" class="portfolio-trigger hover:text-yellow-600 focus:outline-none">Academia de Fitness</button>
+                    <button type="button" data-portfolio="restaurante" class="portfolio-trigger hover:text-yellow-600 focus:outline-none">Restaurante Local</button>
+                    <button type="button" data-portfolio="agencia" class="portfolio-trigger hover:text-yellow-600 focus:outline-none">Agência Digital</button>
+                    <button type="button" data-portfolio="consultoria" class="portfolio-trigger hover:text-yellow-600 focus:outline-none">Consultoria Empresarial</button>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <a href="#contato" class="inline-block bg-yellow-600 hover:bg-yellow-700 text-black px-10 py-4 rounded-lg font-semibold transition">
+                    Quero Resultados como Esses
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Modal -->
+    <div id="portfolio-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 p-4">
+        <div class="bg-gray-900 rounded-3xl border border-yellow-600/30 max-w-3xl w-full overflow-hidden shadow-2xl">
+            <div class="flex justify-between items-start p-6 border-b border-yellow-600/20">
+                <div>
+                    <p class="text-yellow-600 text-xs tracking-[0.3em] uppercase mb-2">Resultado do Projeto</p>
+                    <h3 id="portfolio-modal-title" class="text-3xl font-display text-white"></h3>
+                </div>
+                <button id="portfolio-modal-close" type="button" class="text-gray-400 hover:text-white text-3xl leading-none">&times;</button>
+            </div>
+            <div class="p-6 text-gray-300 space-y-6">
+                <div id="portfolio-modal-content" class="w-full bg-black/50 rounded-lg overflow-hidden"></div>
+                <p id="portfolio-modal-description" class="text-lg leading-relaxed"></p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-gray-800/50 rounded-lg p-4 text-center">
+                        <p class="text-yellow-600 font-bold text-2xl" id="portfolio-modal-result"></p>
+                        <p class="text-gray-400 text-sm">Resultado Alcançado</p>
+                    </div>
+                    <div class="bg-gray-800/50 rounded-lg p-4 text-center">
+                        <p class="text-yellow-600 font-bold text-2xl" id="portfolio-modal-duration">3 meses</p>
+                        <p class="text-gray-400 text-sm">Duração da Campanha</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 border-t border-yellow-600/20 flex justify-end">
+                <a href="https://wa.me/5563981298018" target="_blank" class="bg-yellow-600 hover:bg-yellow-700 text-black px-6 py-3 rounded-lg font-semibold transition">Quero Resultados Similares</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="service-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 p-4">
+        <div class="bg-gray-900 rounded-3xl border border-yellow-600/30 max-w-3xl w-full overflow-hidden shadow-2xl">
+            <div class="flex justify-between items-start p-6 border-b border-yellow-600/20">
+                <div>
+                    <p class="text-yellow-600 text-xs tracking-[0.3em] uppercase mb-2">Detalhes do serviço</p>
+                    <h3 id="service-modal-title" class="text-3xl font-display text-white"></h3>
+                </div>
+                <button id="service-modal-close" type="button" class="text-gray-400 hover:text-white text-3xl leading-none">&times;</button>
+            </div>
+            <div class="p-6 text-gray-300 space-y-6">
+                <p id="service-modal-description" class="text-lg leading-relaxed"></p>
+                <ul id="service-modal-bullets" class="grid gap-3 sm:grid-cols-2 list-disc list-inside text-gray-300"></ul>
+            </div>
+            <div class="p-6 border-t border-yellow-600/20 flex justify-end">
+                <a href="https://wa.me/5563981298018" target="_blank" class="bg-yellow-600 hover:bg-yellow-700 text-black px-6 py-3 rounded-lg font-semibold transition">Falar no WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Contato -->
+    <section id="contato" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-gray-900/80 border-2 border-yellow-600 rounded-xl p-12 text-center">
+                <p class="text-yellow-600 text-xs tracking-[0.3em] uppercase mb-4">Próximo Passo</p>
+                <h2 class="font-display text-4xl text-white mb-6">Vamos conversar?</h2>
+                <p class="text-gray-300 text-lg mb-8">Descubra como a Carol Carvalho Assessoria e Projetos pode transformar a presença digital do seu negócio.</p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                    <a href="https://wa.me/5563981298018" class="bg-yellow-600 hover:bg-yellow-700 text-black px-8 py-4 rounded-lg font-semibold transition flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp"></i> WhatsApp: (63) 98129-8018
+                    </a>
+                    <a href="https://www.instagram.com/engajec" target="_blank" class="border-2 border-yellow-600 text-yellow-600 hover:bg-yellow-600/10 px-8 py-4 rounded-lg font-semibold transition flex items-center justify-center gap-2">
+                        <i class="fab fa-instagram"></i> @engajec
+                    </a>
+                </div>
+
+                <form class="max-w-md mx-auto space-y-4">
+                    <input type="email" placeholder="Seu email" required class="w-full px-6 py-3 rounded-lg bg-black/50 border border-yellow-600/50 text-white placeholder:text-gray-500 focus:border-yellow-600 transition">
+                    <input type="tel" placeholder="Seu telefone" required class="w-full px-6 py-3 rounded-lg bg-black/50 border border-yellow-600/50 text-white placeholder:text-gray-500 focus:border-yellow-600 transition">
+                    <button type="submit" class="w-full bg-yellow-600 hover:bg-yellow-700 text-black px-8 py-3 rounded-lg font-semibold transition">
+                        Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perguntas Frequentes -->
+    <section id="faq" class="py-24 px-6 bg-gray-950/50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <p class="text-yellow-600 text-xs tracking-[0.3em] uppercase mb-4">Dúvidas</p>
+                <h2 class="font-display text-5xl text-white mb-4">Perguntas Frequentes</h2>
+                <div class="w-20 h-1 bg-yellow-600 mx-auto"></div>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-gray-900/50 border border-yellow-600/30 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 flex justify-between items-center hover:bg-gray-800/50 transition" data-faq="faq-1">
+                        <h3 class="text-white font-semibold text-lg text-left">Quanto tempo leva para ver resultados?</h3>
+                        <i class="fas fa-chevron-down text-yellow-600 transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-1" class="faq-content hidden px-6 pb-4 text-gray-300 border-t border-yellow-600/20">
+                        <p>Os primeiros resultados geralmente aparecem entre 2 a 4 semanas, dependendo da estratégia. Campanhas de tráfego pago mostram resultados mais rápidos, enquanto SEO requer mais tempo. Trabalhamos com metas mensuráveis para acompanhar seu progresso constantemente.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-gray-900/50 border border-yellow-600/30 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 flex justify-between items-center hover:bg-gray-800/50 transition" data-faq="faq-2">
+                        <h3 class="text-white font-semibold text-lg text-left">Qual é o investimento mínimo?</h3>
+                        <i class="fas fa-chevron-down text-yellow-600 transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-2" class="faq-content hidden px-6 pb-4 text-gray-300 border-t border-yellow-600/20">
+                        <p>Não temos um valor mínimo fixo. Trabalhos personalizados de acordo com o orçamento e objetivos do seu negócio. Oferecemos planos a partir de investimentos acessíveis para pequenos negócios até soluções premium. Agendamos uma consulta para conhecer suas necessidades.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-gray-900/50 border border-yellow-600/30 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 flex justify-between items-center hover:bg-gray-800/50 transition" data-faq="faq-3">
+                        <h3 class="text-white font-semibold text-lg text-left">Vocês trabalham com meu segmento?</h3>
+                        <i class="fas fa-chevron-down text-yellow-600 transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-3" class="faq-content hidden px-6 pb-4 text-gray-300 border-t border-yellow-600/20">
+                        <p>Sim! Temos experiência em diversos segmentos: varejo, serviços, consultoria, e-commerce, saúde, educação e muito mais. Cada negócio tem suas particularidades e criamos estratégias específicas para o seu ramo. Fale conosco e discutimos como podemos ajudar.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-gray-900/50 border border-yellow-600/30 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 flex justify-between items-center hover:bg-gray-800/50 transition" data-faq="faq-4">
+                        <h3 class="text-white font-semibold text-lg text-left">Como funciona o acompanhamento e relatórios?</h3>
+                        <i class="fas fa-chevron-down text-yellow-600 transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-4" class="faq-content hidden px-6 pb-4 text-gray-300 border-t border-yellow-600/20">
+                        <p>Você recebe relatórios detalhados mensalmente com todas as métricas importantes: alcance, engajamento, conversões, ROI e muito mais. Realizamos reuniões periódicas para revisar dados e ajustar estratégias. Transparência total é nosso compromisso.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="bg-gray-900/50 border border-yellow-600/30 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 flex justify-between items-center hover:bg-gray-800/50 transition" data-faq="faq-5">
+                        <h3 class="text-white font-semibold text-lg text-left">Posso cancelar a qualquer momento?</h3>
+                        <i class="fas fa-chevron-down text-yellow-600 transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-5" class="faq-content hidden px-6 pb-4 text-gray-300 border-t border-yellow-600/20">
+                        <p>Sim, você pode cancelar com 30 dias de antecedência. Porém, recomendamos manter os serviços por pelo menos 3 meses para que as estratégias tenham tempo de gerar resultados significativos. Raramente nossos clientes saem porque veem realmente os resultados.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="bg-gray-900/50 border border-yellow-600/30 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 flex justify-between items-center hover:bg-gray-800/50 transition" data-faq="faq-6">
+                        <h3 class="text-white font-semibold text-lg text-left">Vou ter um gestor dedicado?</h3>
+                        <i class="fas fa-chevron-down text-yellow-600 transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-6" class="faq-content hidden px-6 pb-4 text-gray-300 border-t border-yellow-600/20">
+                        <p>Sim! Cada cliente recebe um gestor dedicado que conhece sua marca, objetivos e mercado. Essa pessoa será seu ponto de contato principal para qualquer dúvida, decisão ou ajuste nas estratégias. Continuidade e relacionamento forte fazem parte da nossa filosofia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <a href="https://wa.me/5563981298018" target="_blank" aria-label="WhatsApp" class="fixed right-5 bottom-5 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-2xl p-4 flex items-center justify-center gap-3 transition">
+        <i class="fab fa-whatsapp text-2xl"></i>
+        <span class="hidden sm:inline font-semibold">WhatsApp</span>
+    </a>
+
+    <footer class="py-12 px-6 border-t border-yellow-600/20">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="mb-6">
+                <h3 class="text-white font-display text-xl mb-2">Carol Carvalho</h3>
+                <p class="text-gray-400 text-sm">Assessoria e Projetos | Presença digital que gera resultado</p>
+            </div>
+            <p class="text-gray-500 text-xs">&copy; 2026 Carol Carvalho Assessoria e Projetos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const serviceDetails = {
+            'trafego-pago': {
+                title: 'Tráfego Pago e Marketing de Conteúdo',
+                description: 'Campanhas no Meta Ads e Google Ads combinadas com uma estratégia de conteúdo para atrair, envolver e converter os clientes certos.',
+                bullets: [
+                    'Planejamento de campanhas no Meta Ads e Google Ads',
+                    'Segmentação assertiva e otimização de anúncios',
+                    'Planejamento editorial e pautas estratégicas',
+                    'Criação de conteúdos para relacionamento e autoridade',
+                    'Integração entre conteúdo, anúncios e conversão',
+                    'Relatórios claros de alcance, leads e ROI'
+                ]
+            },
+            'sites-landing-pages': {
+                title: 'Sites & Landing Pages',
+                description: 'Websites profissionais e landing pages que convertem visitantes em leads por meio de design funcional e copy persuasiva.',
+                bullets: [
+                    'Design responsivo e moderno',
+                    'Foco em conversão e usabilidade',
+                    'Integração com formulários e métricas'
+                ]
+            },
+            'seo-gmn': {
+                title: 'SEO Local & GMN',
+                description: 'Seu negócio aparecendo nas buscas da sua cidade, com o Google Meu Negócio configurado e otimizado.',
+                bullets: [
+                    'Melhoria de SEO on-page',
+                    'Otimização de perfil GMN',
+                    'Estratégias para buscas locais'
+                ]
+            },
+            'ga4-rastreamento': {
+                title: 'GA4 & Rastreamento',
+                description: 'Configuramos o Google Analytics 4 e as ferramentas de rastreamento para medir a origem dos acessos, o comportamento dos visitantes e as conversões do seu negócio.',
+                bullets: [
+                    'Configuração do Google Analytics 4',
+                    'Instalação e revisão de tags e eventos',
+                    'Rastreamento de formulários, cliques e conversões',
+                    'Definição de metas e indicadores de acompanhamento',
+                    'Integração com Google Tag Manager e Search Console',
+                    'Auditoria e melhoria da qualidade dos dados'
+                ]
+            },
+            'relatorios-performance': {
+                title: 'Relatórios de Performance',
+                description: 'Painel visual no Looker Studio e relatório mensal em PDF para transformar dados de marketing em informações claras e apoiar decisões melhores.',
+                bullets: [
+                    'Painel visual e interativo no Looker Studio',
+                    'Relatório mensal em PDF',
+                    'Acompanhamento de alcance, tráfego e conversões',
+                    'Análise de campanhas e canais de aquisição',
+                    'Comparação de metas e evolução dos indicadores',
+                    'Identificação de oportunidades de melhoria',
+                    'Recomendações práticas para os próximos passos'
+                ]
+            },
+            'implementacao-crm': {
+                title: 'Implementação de CRM',
+                description: 'Estruturamos o CRM para organizar contatos, etapas de vendas e tarefas, dando mais clareza para o atendimento e para o crescimento do negócio.',
+                bullets: [
+                    'Mapeamento do processo comercial e de atendimento',
+                    'Configuração do CRM conforme a rotina da empresa',
+                    'Criação de etapas, campos e pipelines de vendas',
+                    'Organização e importação da base de contatos',
+                    'Automação de tarefas e follow-ups',
+                    'Treinamento para uso da equipe e acompanhamento dos resultados'
+                ]
+            }
+        };
+
+        const modal = document.getElementById('service-modal');
+        const modalTitle = document.getElementById('service-modal-title');
+        const modalDescription = document.getElementById('service-modal-description');
+        const modalBullets = document.getElementById('service-modal-bullets');
+        const modalClose = document.getElementById('service-modal-close');
+
+        document.querySelectorAll('[data-service]').forEach(button => {
+            button.addEventListener('click', () => {
+                const key = button.getAttribute('data-service');
+                const detail = serviceDetails[key];
+                if (!detail) return;
+
+                modalTitle.textContent = detail.title;
+                modalDescription.textContent = detail.description;
+                modalBullets.innerHTML = detail.bullets.map(item => `<li>${item}</li>`).join('');
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            });
+        });
+
+        modalClose.addEventListener('click', () => {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        });
+
+        modal.addEventListener('click', event => {
+            if (event.target === modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqId = button.getAttribute('data-faq');
+                const faqContent = document.getElementById(faqId);
+                const icon = button.querySelector('i');
+                const isHidden = faqContent.classList.contains('hidden');
+
+                // Fechar todos os outros
+                document.querySelectorAll('.faq-content').forEach(content => {
+                    content.classList.add('hidden');
+                });
+                document.querySelectorAll('.faq-toggle i').forEach(i => {
+                    i.style.transform = 'rotate(0deg)';
+                });
+
+                // Abrir o atual
+                if (isHidden) {
+                    faqContent.classList.remove('hidden');
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+
+        // Portfolio Modal
+        const portfolioDetails = {
+            'ecommerce': {
+                title: 'E-commerce B2B',
+                description: 'Campanha completa de Google Ads e remarketing para loja de produtos industriais. Otimizamos landing pages, segmentação de público-alvo e estratégia de lances.',
+                result: '+340%',
+                duration: '4 meses',
+                image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22400%22%3E%3Crect fill=%22%23EFECE6%22 width=%22800%22 height=%22400%22/%3E%3Ctext x=%22400%22 y=%22200%22 font-size=%2232%22 fill=%22%23A28168%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EGráfico: Crescimento de Vendas 340%25%3C/text%3E%3C/svg%3E'
+            },
+            'salao': {
+                title: 'Salão de Beleza',
+                description: 'Gestão completa de redes sociais (Instagram) com conteúdo estratégico e otimização de Google Meu Negócio. Resultados em agendamentos online e foot traffic.',
+                result: '+280%',
+                duration: '3 meses',
+                image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22400%22%3E%3Crect fill=%22%23EFECE6%22 width=%22800%22 height=%22400%22/%3E%3Ctext x=%22400%22 y=%22200%22 font-size=%2232%22 fill=%22%23A28168%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EGráfico: Agendamentos +280%25%3C/text%3E%3C/svg%3E'
+            },
+            'academia': {
+                title: 'Academia de Fitness',
+                description: 'Tráfego pago em Google Ads + campanha de email marketing e SMS. Segmentação por interesse em fitness e retargeting de visitantes do site.',
+                result: '+195%',
+                duration: '3 meses',
+                image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22400%22%3E%3Crect fill=%22%23EFECE6%22 width=%22800%22 height=%22400%22/%3E%3Ctext x=%22400%22 y=%22200%22 font-size=%2232%22 fill=%22%23A28168%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EGráfico: Leads Gerados +195%25%3C/text%3E%3C/svg%3E'
+            },
+            'restaurante': {
+                title: 'Restaurante Local',
+                description: 'Campanha de Instagram Ads com foco em localização + otimização completa de Google Meu Negócio. Aumento massivo em buscas locais e reservas.',
+                result: '+420%',
+                duration: '2 meses',
+                image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22400%22%3E%3Crect fill=%22%23EFECE6%22 width=%22800%22 height=%22400%22/%3E%3Ctext x=%22400%22 y=%22200%22 font-size=%2232%22 fill=%22%23A28168%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EGráfico: Buscas Locais +420%25%3C/text%3E%3C/svg%3E'
+            },
+            'agencia': {
+                title: 'Agência Digital',
+                description: 'Redesign completo de site + implementação de CRM + estratégia de inbound marketing. Aumento significativo em contatos qualificados para vendas.',
+                result: '+510%',
+                duration: '5 meses',
+                image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22400%22%3E%3Crect fill=%22%23EFECE6%22 width=%22800%22 height=%22400%22/%3E%3Ctext x=%22400%22 y=%22200%22 font-size=%2232%22 fill=%22%23A28168%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EGráfico: Contatos +510%25%3C/text%3E%3C/svg%3E'
+            },
+            'consultoria': {
+                title: 'Consultoria Empresarial',
+                description: 'Campanha em LinkedIn Ads + email marketing segmentado. Geração de leads B2B de alta qualidade para serviços de consultoria empresarial.',
+                result: '+650%',
+                duration: '6 meses',
+                image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22400%22%3E%3Crect fill=%22%23EFECE6%22 width=%22800%22 height=%22400%22/%3E%3Ctext x=%22400%22 y=%22200%22 font-size=%2232%22 fill=%22%23A28168%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EGráfico: Leads B2B +650%25%3C/text%3E%3C/svg%3E'
+            }
+        };
+
+        const portfolioModal = document.getElementById('portfolio-modal');
+        const portfolioModalTitle = document.getElementById('portfolio-modal-title');
+        const portfolioModalDescription = document.getElementById('portfolio-modal-description');
+        const portfolioModalContent = document.getElementById('portfolio-modal-content');
+        const portfolioModalResult = document.getElementById('portfolio-modal-result');
+        const portfolioModalDuration = document.getElementById('portfolio-modal-duration');
+        const portfolioModalClose = document.getElementById('portfolio-modal-close');
+
+        document.querySelectorAll('[data-portfolio]').forEach(button => {
+            button.addEventListener('click', () => {
+                const key = button.getAttribute('data-portfolio');
+                const detail = portfolioDetails[key];
+                if (!detail) return;
+
+                portfolioModalTitle.textContent = detail.title;
+                portfolioModalDescription.textContent = detail.description;
+                portfolioModalResult.textContent = detail.result;
+                portfolioModalDuration.textContent = detail.duration;
+                portfolioModalContent.innerHTML = `<img src="${detail.image}" alt="${detail.title}" class="w-full h-auto">`;
+                
+                portfolioModal.classList.remove('hidden');
+                portfolioModal.classList.add('flex');
+            });
+        });
+
+        portfolioModalClose.addEventListener('click', () => {
+            portfolioModal.classList.add('hidden');
+            portfolioModal.classList.remove('flex');
+        });
+
+        portfolioModal.addEventListener('click', event => {
+            if (event.target === portfolioModal) {
+                portfolioModal.classList.add('hidden');
+                portfolioModal.classList.remove('flex');
+            }
+        });
+    </script>
+</body>
+</html>
