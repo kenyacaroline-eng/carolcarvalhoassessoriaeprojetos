@@ -1,612 +1,1933 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carol Carvalho Assessoria e Projetos</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        yellow: {
-                            500: '#B88978',
-                            600: '#A65D45',
-                            700: '#874632'
-                        }
-                    }
-                }
-            }
-        };
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .font-display { font-family: 'Playfair Display', serif; }
-        .text-ouro { color: #B88978; }
-        .text-rosa { color: #B88978; }
-        .bg-rosa { background-color: #A65D45; }
-        .border-ouro { border: 2px solid #B88978; }
-        .hover-lift:hover { transform: translateY(-4px); }
-    </style>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Projex Digital | Estratégia, Tráfego e Tecnologia</title>
+
+  <meta
+    name="description"
+    content="A Projex Digital conecta estratégia, tráfego pago, tecnologia e automação para ajudar empresas a crescer no digital."
+  >
+
+  <meta
+    name="keywords"
+    content="Projex Digital, tráfego pago, marketing digital, tecnologia, automação, soluções digitais, estratégia digital"
+  >
+
+  <meta name="author" content="Projex Digital">
+
+  <meta property="og:title" content="Projex Digital | Estratégia, Tráfego e Tecnologia">
+  <meta
+    property="og:description"
+    content="Estratégia que conecta negócios e tecnologia."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://projexdigital.com.br">
+
+  <link rel="canonical" href="https://projexdigital.com.br">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-black">
-    <!-- Header Luxuoso -->
-    <header class="fixed w-full top-0 z-50 bg-black/80 backdrop-blur-lg border-b border-yellow-600/20">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <div>
-                    <h1 class="text-white font-display text-2xl font-bold">Carol Carvalho</h1>
-                    <p class="text-yellow-600 text-xs tracking-widest">ASSESSORIA E PROJETOS</p>
-                </div>
+
+<body>
+
+  <!-- =========================================================
+       HEADER
+  ========================================================== -->
+
+  <header class="site-header" id="top">
+
+    <div class="container header-container">
+
+      <a href="#inicio" class="brand" aria-label="Projex Digital - início">
+        <img
+          src="img/logo projex.png"
+          alt="Projex Digital"
+          class="brand-logo"
+        >
+      </a>
+
+      <nav class="main-navigation" aria-label="Navegação principal">
+
+        <a href="#inicio">Início</a>
+
+        <a href="#solucoes">Soluções</a>
+
+        <a href="#processo">Como funciona</a>
+
+        <a href="#projetos">Projetos</a>
+
+        <a href="#sobre">Sobre</a>
+
+        <a href="#contato" class="nav-cta">
+          Falar com a Projex
+        </a>
+
+      </nav>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+
+      <a href="#inicio">Início</a>
+
+      <a href="#solucoes">Soluções</a>
+
+      <a href="#processo">Como funciona</a>
+
+      <a href="#projetos">Projetos</a>
+
+      <a href="#sobre">Sobre</a>
+
+      <a href="#contato">Contato</a>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- =========================================================
+         HERO
+    ========================================================== -->
+
+    <section class="hero-section" id="inicio">
+
+      <div class="hero-grid container">
+
+        <div class="hero-content">
+
+          <span class="eyebrow">
+            PROJEX DIGITAL
+          </span>
+
+          <h1>
+            Estratégia que conecta
+            <span>negócios e tecnologia.</span>
+          </h1>
+
+          <p class="hero-description">
+            Tráfego pago, automação, tecnologia e soluções digitais
+            pensadas para transformar presença digital em oportunidades
+            reais de negócio.
+          </p>
+
+          <div class="hero-actions">
+
+            <a href="#solucoes" class="button button-primary">
+              Conhecer a Projex
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a
+              href="https://wa.me/5563981298018"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button button-secondary"
+            >
+              Falar com a Projex
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+          </div>
+
+          <div class="hero-bottom">
+
+            <div class="hero-mini-item">
+              <strong>Estratégia</strong>
+              <span>Antes da execução.</span>
             </div>
 
-            <nav class="hidden md:flex gap-8 text-sm">
-                <a href="#servicos" class="text-gray-300 hover:text-yellow-600 transition">Serviços</a>
-                <a href="#portfolio" class="text-gray-300 hover:text-yellow-600 transition">Portfólio</a>
-                <a href="#faq" class="text-gray-300 hover:text-yellow-600 transition">FAQ</a>
-                <a href="#contato" class="text-gray-300 hover:text-yellow-600 transition">Contato</a>
-            </nav>
+            <div class="hero-mini-item">
+              <strong>Tecnologia</strong>
+              <span>Para otimizar processos.</span>
+            </div>
+
+            <div class="hero-mini-item">
+              <strong>Crescimento</strong>
+              <span>Com evolução contínua.</span>
+            </div>
+
+          </div>
+
         </div>
-    </header>
 
-    <!-- Hero Sofisticado -->
-    <section class="pt-32 pb-20 px-6">
-        <div class="max-w-6xl mx-auto text-center">
-            <div class="profile-photo mx-auto mb-8">
-                <img src="img/foto carol.jpeg" alt="Carol Carvalho" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
-                <div class="hidden profile-photo-placeholder">Sua foto aqui</div>
+
+        <div class="hero-visual">
+
+          <div class="hero-image-wrapper">
+
+            <img
+              src="img/foto carol.jpeg"
+              alt="Fundadora da Projex Digital"
+              class="hero-image"
+            >
+
+            <div class="hero-floating-card">
+
+              <span class="floating-icon">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+              </span>
+
+              <div>
+                <strong>Crescimento digital</strong>
+                <span>estratégia + tecnologia</span>
+              </div>
+
             </div>
-            <p class="text-yellow-600 text-xs tracking-[0.3em] uppercase mb-4">Assessoria estratégica</p>
-            <h1 class="font-display text-5xl md:text-7xl text-white mb-6 leading-tight">
-                Presença digital que <span class="text-yellow-600">gera resultado.</span>
-            </h1>
-            <p class="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-12">
-                Estratégias claras, presença marcante e projetos digitais pensados para transformar sua marca.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         INTRODUÇÃO
+    ========================================================== -->
+
+    <section class="intro-section">
+
+      <div class="container intro-grid">
+
+        <div class="section-label">
+          <span>01</span>
+          <span>O desafio</span>
+        </div>
+
+        <div class="intro-content">
+
+          <h2>
+            Seu negócio não precisa de
+            <span>mais ferramentas.</span>
+            Precisa de uma estratégia que conecte tudo.
+          </h2>
+
+          <p>
+            Estar no digital não significa apenas publicar conteúdo
+            ou investir em anúncios. É preciso entender o negócio,
+            identificar oportunidades e conectar estratégia, marketing
+            e tecnologia.
+          </p>
+
+          <p>
+            É exatamente nesse ponto que a Projex atua.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         SOLUÇÕES
+    ========================================================== -->
+
+    <section class="solutions-section section" id="solucoes">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="eyebrow">
+              O QUE FAZEMOS
+            </span>
+
+            <h2>
+              Soluções pensadas para
+              <span>fazer seu negócio avançar.</span>
+            </h2>
+
+          </div>
+
+          <p>
+            A Projex combina diferentes áreas do digital para criar
+            estratégias mais completas, organizadas e conectadas
+            aos objetivos de cada negócio.
+          </p>
+
+        </div>
+
+
+        <div class="solution-grid">
+
+
+          <!-- ATRair -->
+
+          <article class="solution-card solution-card-featured">
+
+            <div class="solution-number">
+              01
+            </div>
+
+            <div class="solution-icon">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+
+            <span class="solution-kicker">
+              ATRair
+            </span>
+
+            <h3>
+              Performance & Tráfego
+            </h3>
+
+            <p>
+              Estratégias para aumentar a visibilidade da sua empresa
+              e conectar sua marca às pessoas certas.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#contato" class="bg-yellow-600 hover:bg-yellow-700 text-black px-10 py-4 rounded-lg font-semibold transition">
-                    Agendar Consulta
-                </a>
-                <a href="https://wa.me/5563981298018" class="border-2 border-yellow-600 text-yellow-600 hover:bg-yellow-600/10 px-10 py-4 rounded-lg font-semibold transition">
-                    WhatsApp
-                </a>
+
+            <ul>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Tráfego pago
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Meta Ads
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Google Ads
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Estratégia de aquisição
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Análise e otimização
+              </li>
+
+            </ul>
+
+            <button
+              class="text-button service-button"
+              data-service="atrair"
+              type="button"
+            >
+              Conhecer solução
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+          </article>
+
+
+          <!-- CONECTAR -->
+
+          <article class="solution-card">
+
+            <div class="solution-number">
+              02
             </div>
+
+            <div class="solution-icon">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+
+            <span class="solution-kicker">
+              CONECTAR
+            </span>
+
+            <h3>
+              Presença & Estratégia Digital
+            </h3>
+
+            <p>
+              Uma presença digital organizada para que sua empresa
+              seja encontrada, compreendida e lembrada.
+            </p>
+
+            <ul>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Estratégia digital
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Google e presença local
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                SEO
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Sites e landing pages
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Conteúdo estratégico
+              </li>
+
+            </ul>
+
+            <button
+              class="text-button service-button"
+              data-service="conectar"
+              type="button"
+            >
+              Conhecer solução
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+          </article>
+
+
+          <!-- OTIMIZAR -->
+
+          <article class="solution-card">
+
+            <div class="solution-number">
+              03
+            </div>
+
+            <div class="solution-icon">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+
+            <span class="solution-kicker">
+              OTIMIZAR
+            </span>
+
+            <h3>
+              Tecnologia & Automação
+            </h3>
+
+            <p>
+              Tecnologia aplicada para organizar processos, melhorar
+              dados e tornar a operação digital mais eficiente.
+            </p>
+
+            <ul>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Automação
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Inteligência artificial
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                CRM
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Rastreamento e dados
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Soluções digitais
+              </li>
+
+            </ul>
+
+            <button
+              class="text-button service-button"
+              data-service="otimizar"
+              type="button"
+            >
+              Conhecer solução
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+          </article>
+
         </div>
+
+      </div>
+
     </section>
 
-    <!-- Serviços Premium -->
-    <section id="servicos" class="py-24 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-20">
-                <p class="text-yellow-600 text-xs tracking-[0.3em] uppercase mb-4">Presença digital</p>
-                <h2 class="font-display text-5xl text-white mb-4">Que gera resultado.</h2>
-                <div class="w-20 h-1 bg-yellow-600 mx-auto"></div>
-            </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Serviço 1 -->
-                <div class="bg-gray-900/50 border border-yellow-600/30 rounded-lg p-8 hover-lift transition group">
-                    <div class="w-14 h-14 bg-yellow-600/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-600 transition">
-                        <i class="fas fa-chart-line text-yellow-600 text-2xl group-hover:text-black transition"></i>
-                    </div>
-                    <h3 class="text-white font-display text-2xl mb-3">Tráfego Pago e Marketing de Conteúdo</h3>
-                    <p class="text-gray-400 mb-4">Campanhas no Meta Ads e Google Ads, unidas a conteúdos que atraem os clientes certos e fortalecem sua marca.</p>
-                    <div class="flex items-center text-yellow-600 group-hover:text-yellow-500">
-                        <button type="button" data-service="trafego-pago" class="text-sm font-semibold flex items-center gap-2 focus:outline-none">
-                            <span>Saiba mais</span>
-                            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
-                        </button>
-                    </div>
-                </div>
+    <!-- =========================================================
+         FRASE DE POSICIONAMENTO
+    ========================================================== -->
 
-                <!-- Serviço 2 -->
-                <div class="bg-gray-900/50 border border-yellow-600/30 rounded-lg p-8 hover-lift transition group">
-                    <div class="w-14 h-14 bg-yellow-600/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-600 transition">
-                        <i class="fas fa-globe text-yellow-600 text-2xl group-hover:text-black transition"></i>
-                    </div>
-                    <h3 class="text-white font-display text-2xl mb-3">Sites & Landing Pages</h3>
-                    <p class="text-gray-400 mb-4">Sites rápidos, responsivos e focados em conversão. Você apresenta, o cliente fecha.</p>
-                    <div class="flex items-center text-yellow-600 group-hover:text-yellow-500">
-                        <button type="button" data-service="sites-landing-pages" class="text-sm font-semibold flex items-center gap-2 focus:outline-none">
-                            <span>Saiba mais</span>
-                            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
-                        </button>
-                    </div>
-                </div>
+    <section class="statement-section">
 
-                <!-- Serviço 4 -->
-                <div class="bg-gray-900/50 border border-yellow-600/30 rounded-lg p-8 hover-lift transition group">
-                    <div class="w-14 h-14 bg-yellow-600/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-600 transition">
-                        <i class="fas fa-map-location-dot text-yellow-600 text-2xl group-hover:text-black transition"></i>
-                    </div>
-                    <h3 class="text-white font-display text-2xl mb-3">SEO Local & GMN</h3>
-                    <p class="text-gray-400 mb-4">Seu negócio aparecendo nas buscas da sua cidade. Google Meu Negócio configurado e otimizado.</p>
-                    <div class="flex items-center text-yellow-600 group-hover:text-yellow-500">
-                        <button type="button" data-service="seo-gmn" class="text-sm font-semibold flex items-center gap-2 focus:outline-none">
-                            <span>Saiba mais</span>
-                            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
-                        </button>
-                    </div>
-                </div>
+      <div class="container">
 
-                <!-- Serviço 5 -->
-                <div class="bg-gray-900/50 border border-yellow-600/30 rounded-lg p-8 hover-lift transition group">
-                    <div class="w-14 h-14 bg-yellow-600/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-600 transition">
-                        <i class="fas fa-chart-pie text-yellow-600 text-2xl group-hover:text-black transition"></i>
-                    </div>
-                    <h3 class="text-white font-display text-2xl mb-3">GA4 & Rastreamento</h3>
-                    <p class="text-gray-400 mb-4">Configuração e acompanhamento dos dados para entender o comportamento dos visitantes.</p>
-                    <div class="flex items-center text-yellow-600 group-hover:text-yellow-500">
-                        <button type="button" data-service="ga4-rastreamento" class="text-sm font-semibold flex items-center gap-2 focus:outline-none">
-                            <span>Saiba mais</span>
-                            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
-                        </button>
-                    </div>
-                </div>
+        <div class="statement-box">
 
-                <!-- Serviço 5 -->
-                <div class="bg-gray-900/50 border border-yellow-600/30 rounded-lg p-8 hover-lift transition group">
-                    <div class="w-14 h-14 bg-yellow-600/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-600 transition">
-                        <i class="fas fa-file-chart-column text-yellow-600 text-2xl group-hover:text-black transition"></i>
-                    </div>
-                    <h3 class="text-white font-display text-2xl mb-3">Relatórios de Performance</h3>
-                    <p class="text-gray-400 mb-4">Painel visual no Looker Studio + relatório mensal em PDF. Dados claros, decisões melhores.</p>
-                    <div class="flex items-center text-yellow-600 group-hover:text-yellow-500">
-                        <button type="button" data-service="relatorios-performance" class="text-sm font-semibold flex items-center gap-2 focus:outline-none">
-                            <span>Saiba mais</span>
-                            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
-                        </button>
-                    </div>
-                </div>
+          <span class="eyebrow">
+            A PROJEX PENSA ALÉM DA FERRAMENTA
+          </span>
 
-                <!-- Serviço 6 -->
-                <div class="bg-gray-900/50 border border-yellow-600/30 rounded-lg p-8 hover-lift transition group">
-                    <div class="w-14 h-14 bg-yellow-600/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-600 transition">
-                        <i class="fas fa-diagram-project text-yellow-600 text-2xl group-hover:text-black transition"></i>
-                    </div>
-                    <h3 class="text-white font-display text-2xl mb-3">Implementação de CRM</h3>
-                    <p class="text-gray-400 mb-4">Organização do atendimento, vendas e relacionamento para sua equipe trabalhar com mais eficiência.</p>
-                    <div class="flex items-center text-yellow-600 group-hover:text-yellow-500">
-                        <button type="button" data-service="implementacao-crm" class="text-sm font-semibold flex items-center gap-2 focus:outline-none">
-                            <span>Saiba mais</span>
-                            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
+          <h2>
+            Tecnologia sem estratégia é apenas ferramenta.
+            <span>Estratégia sem execução não gera transformação.</span>
+          </h2>
+
+          <p>
+            Nós conectamos os dois.
+          </p>
+
         </div>
+
+      </div>
+
     </section>
 
-    <!-- Portfólio -->
-    <section id="portfolio" class="py-24 px-6 bg-gray-950/50">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-20">
-                <p class="text-yellow-600 text-xs tracking-[0.3em] uppercase mb-4">Trabalhos Realizados</p>
-                <h2 class="font-display text-5xl text-white mb-4">Nosso Portfólio</h2>
-                <div class="w-20 h-1 bg-yellow-600 mx-auto"></div>
-            </div>
 
-            <div class="max-w-6xl mx-auto">
-                <div class="relative aspect-video overflow-hidden rounded-2xl border border-yellow-600/40 bg-gray-950 shadow-2xl">
-                    <iframe class="h-full w-full border-0 bg-white" src="https://www.valfreireestetica.com.br" title="Site da Val Freire Estética" loading="lazy"></iframe>
-                    <div class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent px-6 pb-6 pt-16">
-                        <p class="text-xs uppercase tracking-[0.3em] text-yellow-600">Painel de projetos</p>
-                        <p class="mt-2 text-lg text-white md:text-2xl">Val Freire Estética</p>
-                    </div>
-                </div>
+    <!-- =========================================================
+         PROCESSO
+    ========================================================== -->
 
-                <div class="mt-4 text-center">
-                    <a href="https://www.valfreireestetica.com.br" target="_blank" rel="noopener noreferrer" class="text-sm text-yellow-600 hover:text-yellow-500">
-                        Visitar site completo <i class="fas fa-arrow-up-right-from-square ml-1"></i>
-                    </a>
-                </div>
+    <section class="process-section section" id="processo">
 
-                <div class="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-gray-400">
-                    <a href="https://kenyacaroline-eng.github.io/seisnaestrada/" target="_blank" rel="noopener noreferrer" class="portfolio-trigger hover:text-yellow-600 focus:outline-none">
-                        Seis na Estrada <i class="fas fa-arrow-up-right-from-square ml-1 text-xs"></i>
-                    </a>
-                    <button type="button" data-portfolio="ecommerce" class="portfolio-trigger hover:text-yellow-600 focus:outline-none">E-commerce B2B</button>
-                    <button type="button" data-portfolio="salao" class="portfolio-trigger hover:text-yellow-600 focus:outline-none">Salão de Beleza</button>
-                    <button type="button" data-portfolio="academia" class="portfolio-trigger hover:text-yellow-600 focus:outline-none">Academia de Fitness</button>
-                    <button type="button" data-portfolio="restaurante" class="portfolio-trigger hover:text-yellow-600 focus:outline-none">Restaurante Local</button>
-                    <button type="button" data-portfolio="agencia" class="portfolio-trigger hover:text-yellow-600 focus:outline-none">Agência Digital</button>
-                    <button type="button" data-portfolio="consultoria" class="portfolio-trigger hover:text-yellow-600 focus:outline-none">Consultoria Empresarial</button>
-                </div>
-            </div>
+      <div class="container">
 
-            <div class="mt-16 text-center">
-                <a href="#contato" class="inline-block bg-yellow-600 hover:bg-yellow-700 text-black px-10 py-4 rounded-lg font-semibold transition">
-                    Quero Resultados como Esses
-                </a>
-            </div>
+        <div class="section-heading">
+
+          <div>
+
+            <span class="eyebrow">
+              COMO FUNCIONA
+            </span>
+
+            <h2>
+              Um processo pensado para
+              <span>evoluir com o negócio.</span>
+            </h2>
+
+          </div>
+
+          <p>
+            Cada projeto começa com entendimento. A execução vem
+            depois da estratégia.
+          </p>
+
         </div>
+
+
+        <div class="process-grid">
+
+
+          <div class="process-item">
+
+            <span class="process-number">
+              01
+            </span>
+
+            <div class="process-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <h3>
+              Diagnóstico
+            </h3>
+
+            <p>
+              Entendemos o negócio, o momento atual, os objetivos
+              e os principais desafios.
+            </p>
+
+          </div>
+
+
+          <div class="process-item">
+
+            <span class="process-number">
+              02
+            </span>
+
+            <div class="process-icon">
+              <i class="fa-solid fa-compass"></i>
+            </div>
+
+            <h3>
+              Estratégia
+            </h3>
+
+            <p>
+              Definimos prioridades, canais, ferramentas e ações
+              de acordo com os objetivos.
+            </p>
+
+          </div>
+
+
+          <div class="process-item">
+
+            <span class="process-number">
+              03
+            </span>
+
+            <div class="process-icon">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+
+            <h3>
+              Execução
+            </h3>
+
+            <p>
+              Colocamos a estratégia em prática com organização
+              e acompanhamento.
+            </p>
+
+          </div>
+
+
+          <div class="process-item">
+
+            <span class="process-number">
+              04
+            </span>
+
+            <div class="process-icon">
+              <i class="fa-solid fa-chart-simple"></i>
+            </div>
+
+            <h3>
+              Análise
+            </h3>
+
+            <p>
+              Acompanhamos dados e indicadores para entender
+              o que está funcionando.
+            </p>
+
+          </div>
+
+
+          <div class="process-item">
+
+            <span class="process-number">
+              05
+            </span>
+
+            <div class="process-icon">
+              <i class="fa-solid fa-arrows-rotate"></i>
+            </div>
+
+            <h3>
+              Evolução
+            </h3>
+
+            <p>
+              Ajustamos a estratégia continuamente para buscar
+              novas oportunidades.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </section>
 
-    <!-- Portfolio Modal -->
-    <div id="portfolio-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 p-4">
-        <div class="bg-gray-900 rounded-3xl border border-yellow-600/30 max-w-3xl w-full overflow-hidden shadow-2xl">
-            <div class="flex justify-between items-start p-6 border-b border-yellow-600/20">
-                <div>
-                    <p class="text-yellow-600 text-xs tracking-[0.3em] uppercase mb-2">Resultado do Projeto</p>
-                    <h3 id="portfolio-modal-title" class="text-3xl font-display text-white"></h3>
-                </div>
-                <button id="portfolio-modal-close" type="button" class="text-gray-400 hover:text-white text-3xl leading-none">&times;</button>
-            </div>
-            <div class="p-6 text-gray-300 space-y-6">
-                <div id="portfolio-modal-content" class="w-full bg-black/50 rounded-lg overflow-hidden"></div>
-                <p id="portfolio-modal-description" class="text-lg leading-relaxed"></p>
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="bg-gray-800/50 rounded-lg p-4 text-center">
-                        <p class="text-yellow-600 font-bold text-2xl" id="portfolio-modal-result"></p>
-                        <p class="text-gray-400 text-sm">Resultado Alcançado</p>
-                    </div>
-                    <div class="bg-gray-800/50 rounded-lg p-4 text-center">
-                        <p class="text-yellow-600 font-bold text-2xl" id="portfolio-modal-duration">3 meses</p>
-                        <p class="text-gray-400 text-sm">Duração da Campanha</p>
-                    </div>
-                </div>
-            </div>
-            <div class="p-6 border-t border-yellow-600/20 flex justify-end">
-                <a href="https://wa.me/5563981298018" target="_blank" class="bg-yellow-600 hover:bg-yellow-700 text-black px-6 py-3 rounded-lg font-semibold transition">Quero Resultados Similares</a>
-            </div>
+
+    <!-- =========================================================
+         PROJETOS
+    ========================================================== -->
+
+    <section class="projects-section section" id="projetos">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="eyebrow">
+              PROJETOS
+            </span>
+
+            <h2>
+              Projetos que mostram
+              <span>o que fazemos na prática.</span>
+            </h2>
+
+          </div>
+
+          <p>
+            Apresentamos projetos reais desenvolvidos ou conduzidos
+            pela nossa equipe.
+          </p>
+
         </div>
+
+
+        <div class="projects-grid">
+
+
+          <!-- Projeto Val Freire -->
+
+          <article class="project-card project-card-large">
+
+            <div class="project-preview">
+
+              <iframe
+                src="https://www.valfreireestetica.com.br"
+                title="Projeto Val Freire Estética"
+                loading="lazy"
+              ></iframe>
+
+              <div class="project-overlay"></div>
+
+            </div>
+
+            <div class="project-content">
+
+              <div class="project-top">
+
+                <span class="project-category">
+                  Presença Digital
+                </span>
+
+                <span class="project-tag">
+                  Projeto real
+                </span>
+
+              </div>
+
+              <h3>
+                Val Freire Estética
+              </h3>
+
+              <p>
+                Projeto de presença digital para uma empresa do
+                segmento de estética e beleza.
+              </p>
+
+              <a
+                href="https://www.valfreireestetica.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-button"
+              >
+                Visitar projeto
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- Projeto Seis na Estrada -->
+
+          <article class="project-card">
+
+            <div class="project-visual project-visual-road">
+
+              <div class="project-symbol">
+                <i class="fa-solid fa-road"></i>
+              </div>
+
+              <span>
+                PROJETO DIGITAL
+              </span>
+
+            </div>
+
+            <div class="project-content">
+
+              <div class="project-top">
+
+                <span class="project-category">
+                  Projeto Digital
+                </span>
+
+                <span class="project-tag">
+                  Projeto real
+                </span>
+
+              </div>
+
+              <h3>
+                Seis na Estrada
+              </h3>
+
+              <p>
+                Projeto digital desenvolvido para uma iniciativa
+                cultural e de viagem pelo Brasil.
+              </p>
+
+              <a
+                href="https://kenyacaroline-eng.github.io/seisnaestrada/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-button"
+              >
+                Conhecer projeto
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- Card institucional -->
+
+          <article class="project-card project-card-institutional">
+
+            <div class="institutional-project">
+
+              <span class="institutional-number">
+                +
+              </span>
+
+              <div>
+
+                <span class="project-category">
+                  NOVOS PROJETOS
+                </span>
+
+                <h3>
+                  Seu negócio pode ser o próximo projeto da Projex.
+                </h3>
+
+              </div>
+
+            </div>
+
+            <div class="project-content">
+
+              <p>
+                Cada projeto começa com uma conversa para entender
+                o momento e os objetivos do negócio.
+              </p>
+
+              <a
+                href="#contato"
+                class="text-button"
+              >
+                Vamos conversar
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         SOBRE
+    ========================================================== -->
+
+    <section class="about-section section" id="sobre">
+
+      <div class="container about-grid">
+
+        <div class="about-visual">
+
+          <div class="about-image-frame">
+
+            <img
+              src="img/foto carol.jpeg"
+              alt="Projex Digital"
+              loading="lazy"
+            >
+
+          </div>
+
+          <div class="about-badge">
+
+            <strong>PROJEX</strong>
+
+            <span>
+              DIGITAL
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="about-content">
+
+          <span class="eyebrow">
+            SOBRE A PROJEX
+          </span>
+
+          <h2>
+            Digital não é só estar online.
+            <span>É saber o que fazer com isso.</span>
+          </h2>
+
+          <p>
+            A Projex Digital nasceu com uma visão simples:
+            aproximar estratégia, marketing e tecnologia para
+            ajudar negócios a crescerem de forma mais organizada.
+          </p>
+
+          <p>
+            Em vez de oferecer apenas uma ferramenta isolada,
+            buscamos entender o cenário completo e encontrar
+            soluções que façam sentido para cada empresa.
+          </p>
+
+
+          <div class="about-values">
+
+            <div>
+              <i class="fa-solid fa-lightbulb"></i>
+
+              <div>
+                <strong>Estratégia</strong>
+                <span>
+                  Pensamento antes da execução.
+                </span>
+              </div>
+            </div>
+
+
+            <div>
+              <i class="fa-solid fa-code"></i>
+
+              <div>
+                <strong>Tecnologia</strong>
+                <span>
+                  Ferramentas a serviço do negócio.
+                </span>
+              </div>
+            </div>
+
+
+            <div>
+              <i class="fa-solid fa-chart-line"></i>
+
+              <div>
+                <strong>Evolução</strong>
+                <span>
+                  Análise para melhorar continuamente.
+                </span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CTA
+    ========================================================== -->
+
+    <section class="cta-section" id="contato">
+
+      <div class="container">
+
+        <div class="cta-box">
+
+          <div class="cta-content">
+
+            <span class="eyebrow">
+              VAMOS CONVERSAR?
+            </span>
+
+            <h2>
+              Seu próximo passo digital
+              <span>começa com uma boa estratégia.</span>
+            </h2>
+
+            <p>
+              Conte um pouco sobre o seu negócio e vamos entender
+              juntos onde a Projex pode ajudar.
+            </p>
+
+          </div>
+
+
+          <div class="cta-actions">
+
+            <a
+              href="https://wa.me/5563981298018?text=Olá%20Projex!%20Gostaria%20de%20conhecer%20as%20soluções%20para%20meu%20negócio."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button button-primary"
+            >
+              Falar pelo WhatsApp
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a
+              href="mailto:contato@projexdigital.com.br"
+              class="button button-secondary"
+            >
+              Enviar e-mail
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/projexdigital.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button button-instagram"
+            >
+              Seguir no Instagram
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         FAQ
+    ========================================================== -->
+
+    <section class="faq-section section" id="faq">
+
+      <div class="container faq-grid">
+
+        <div class="faq-intro">
+
+          <span class="eyebrow">
+            DÚVIDAS
+          </span>
+
+          <h2>
+            Perguntas
+            <span>frequentes.</span>
+          </h2>
+
+          <p>
+            Algumas respostas para as principais dúvidas antes
+            de começar um projeto com a Projex.
+          </p>
+
+          <a
+            href="https://wa.me/5563981298018"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-button"
+          >
+            Tenho outra dúvida
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+        </div>
+
+
+        <div class="faq-list">
+
+
+          <div class="faq-item">
+
+            <button
+              class="faq-question"
+              type="button"
+              aria-expanded="false"
+            >
+              <span>
+                A Projex trabalha com quais tipos de empresas?
+              </span>
+
+              <i class="fa-solid fa-plus"></i>
+
+            </button>
+
+            <div class="faq-answer">
+
+              <p>
+                Trabalhamos com empresas e profissionais que desejam
+                organizar, fortalecer ou expandir sua presença digital.
+                A estratégia é definida de acordo com o momento,
+                segmento e objetivos de cada negócio.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button
+              class="faq-question"
+              type="button"
+              aria-expanded="false"
+            >
+              <span>
+                A Projex trabalha apenas com tráfego pago?
+              </span>
+
+              <i class="fa-solid fa-plus"></i>
+
+            </button>
+
+            <div class="faq-answer">
+
+              <p>
+                Não. O tráfego pago é uma das soluções da Projex.
+                Também trabalhamos com estratégia digital, presença
+                online, tecnologia, automação, dados e outras
+                soluções digitais.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button
+              class="faq-question"
+              type="button"
+              aria-expanded="false"
+            >
+              <span>
+                Como funciona o início de um projeto?
+              </span>
+
+              <i class="fa-solid fa-plus"></i>
+
+            </button>
+
+            <div class="faq-answer">
+
+              <p>
+                Começamos com uma conversa para entender o negócio,
+                os objetivos e os principais desafios. A partir disso,
+                avaliamos quais soluções fazem sentido e definimos
+                os próximos passos.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button
+              class="faq-question"
+              type="button"
+              aria-expanded="false"
+            >
+              <span>
+                Preciso contratar todas as soluções?
+              </span>
+
+              <i class="fa-solid fa-plus"></i>
+
+            </button>
+
+            <div class="faq-answer">
+
+              <p>
+                Não. A Projex trabalha de forma estratégica. Você pode
+                contratar uma solução específica ou construir um projeto
+                mais completo conforme as necessidades do negócio.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button
+              class="faq-question"
+              type="button"
+              aria-expanded="false"
+            >
+              <span>
+                Como os resultados são acompanhados?
+              </span>
+
+              <i class="fa-solid fa-plus"></i>
+
+            </button>
+
+            <div class="faq-answer">
+
+              <p>
+                O acompanhamento depende da solução contratada.
+                Podemos utilizar indicadores, dados de campanhas,
+                acessos, conversões e outros parâmetros relevantes
+                para avaliar a evolução do projeto.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button
+              class="faq-question"
+              type="button"
+              aria-expanded="false"
+            >
+              <span>
+                Posso falar com a Projex antes de contratar?
+              </span>
+
+              <i class="fa-solid fa-plus"></i>
+
+            </button>
+
+            <div class="faq-answer">
+
+              <p>
+                Sim. O primeiro passo é conversar sobre o seu negócio.
+                Assim conseguimos entender o cenário e avaliar se
+                existe uma solução adequada para o seu momento.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-main">
+
+      <div class="footer-brand">
+
+        <a href="#inicio" class="brand">
+
+          <img
+            src="img/logo projex.png"
+            alt="Projex Digital"
+            class="brand-logo"
+          >
+
+        </a>
+
+        <p>
+          Estratégia que conecta negócios e tecnologia.
+        </p>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h3>
+          Navegação
+        </h3>
+
+        <a href="#inicio">Início</a>
+
+        <a href="#solucoes">Soluções</a>
+
+        <a href="#processo">Como funciona</a>
+
+        <a href="#projetos">Projetos</a>
+
+        <a href="#sobre">Sobre</a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h3>
+          Soluções
+        </h3>
+
+        <a href="#solucoes">
+          Performance & Tráfego
+        </a>
+
+        <a href="#solucoes">
+          Estratégia Digital
+        </a>
+
+        <a href="#solucoes">
+          Tecnologia & Automação
+        </a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h3>
+          Contato
+        </h3>
+
+        <a
+          href="https://wa.me/5563981298018"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp
+        </a>
+
+        <a
+          href="mailto:contato@projexdigital.com.br"
+        >
+          E-mail
+        </a>
+
+        <a
+          href="https://www.instagram.com/projexdigital.br"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+
+      </div>
+
     </div>
 
-    <div id="service-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 p-4">
-        <div class="bg-gray-900 rounded-3xl border border-yellow-600/30 max-w-3xl w-full overflow-hidden shadow-2xl">
-            <div class="flex justify-between items-start p-6 border-b border-yellow-600/20">
-                <div>
-                    <p class="text-yellow-600 text-xs tracking-[0.3em] uppercase mb-2">Detalhes do serviço</p>
-                    <h3 id="service-modal-title" class="text-3xl font-display text-white"></h3>
-                </div>
-                <button id="service-modal-close" type="button" class="text-gray-400 hover:text-white text-3xl leading-none">&times;</button>
-            </div>
-            <div class="p-6 text-gray-300 space-y-6">
-                <p id="service-modal-description" class="text-lg leading-relaxed"></p>
-                <ul id="service-modal-bullets" class="grid gap-3 sm:grid-cols-2 list-disc list-inside text-gray-300"></ul>
-            </div>
-            <div class="p-6 border-t border-yellow-600/20 flex justify-end">
-                <a href="https://wa.me/5563981298018" target="_blank" class="bg-yellow-600 hover:bg-yellow-700 text-black px-6 py-3 rounded-lg font-semibold transition">Falar no WhatsApp</a>
-            </div>
-        </div>
+
+    <div class="container footer-bottom">
+
+      <p>
+        © <span id="currentYear"></span> Projex Digital. Todos os direitos reservados.
+      </p>
+
+      <p>
+        Estratégia • Tecnologia • Crescimento
+      </p>
+
     </div>
 
-    <!-- CTA Contato -->
-    <section id="contato" class="py-24 px-6">
-        <div class="max-w-4xl mx-auto">
-            <div class="bg-gray-900/80 border-2 border-yellow-600 rounded-xl p-12 text-center">
-                <p class="text-yellow-600 text-xs tracking-[0.3em] uppercase mb-4">Próximo Passo</p>
-                <h2 class="font-display text-4xl text-white mb-6">Vamos conversar?</h2>
-                <p class="text-gray-300 text-lg mb-8">Descubra como a Carol Carvalho Assessoria e Projetos pode transformar a presença digital do seu negócio.</p>
-                
-                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                    <a href="https://wa.me/5563981298018" class="bg-yellow-600 hover:bg-yellow-700 text-black px-8 py-4 rounded-lg font-semibold transition flex items-center justify-center gap-2">
-                        <i class="fab fa-whatsapp"></i> WhatsApp: (63) 98129-8018
-                    </a>
-                    <a href="https://www.instagram.com/carolcarvalho.eng" target="_blank" class="border-2 border-yellow-600 text-yellow-600 hover:bg-yellow-600/10 px-8 py-4 rounded-lg font-semibold transition flex items-center justify-center gap-2">
-                        <i class="fab fa-instagram"></i> @carolcarvalho.eng                    </a>
-                </div>
+  </footer>
 
-                <form class="max-w-md mx-auto space-y-4">
-                    <input type="email" placeholder="Seu email" required class="w-full px-6 py-3 rounded-lg bg-black/50 border border-yellow-600/50 text-white placeholder:text-gray-500 focus:border-yellow-600 transition">
-                    <input type="tel" placeholder="Seu telefone" required class="w-full px-6 py-3 rounded-lg bg-black/50 border border-yellow-600/50 text-white placeholder:text-gray-500 focus:border-yellow-600 transition">
-                    <button type="submit" class="w-full bg-yellow-600 hover:bg-yellow-700 text-black px-8 py-3 rounded-lg font-semibold transition">
-                        Enviar Mensagem
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
 
-    <!-- Perguntas Frequentes -->
-    <section id="faq" class="py-24 px-6 bg-gray-950/50">
-        <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-16">
-                <p class="text-yellow-600 text-xs tracking-[0.3em] uppercase mb-4">Dúvidas</p>
-                <h2 class="font-display text-5xl text-white mb-4">Perguntas Frequentes</h2>
-                <div class="w-20 h-1 bg-yellow-600 mx-auto"></div>
-            </div>
+  <!-- =========================================================
+       BOTÃO FLUTUANTE WHATSAPP
+  ========================================================== -->
 
-            <div class="space-y-4">
-                <!-- FAQ Item 1 -->
-                <div class="bg-gray-900/50 border border-yellow-600/30 rounded-lg overflow-hidden">
-                    <button class="faq-toggle w-full px-6 py-4 flex justify-between items-center hover:bg-gray-800/50 transition" data-faq="faq-1">
-                        <h3 class="text-white font-semibold text-lg text-left">Quanto tempo leva para ver resultados?</h3>
-                        <i class="fas fa-chevron-down text-yellow-600 transition-transform duration-300"></i>
-                    </button>
-                    <div id="faq-1" class="faq-content hidden px-6 pb-4 text-gray-300 border-t border-yellow-600/20">
-                        <p>Os primeiros resultados geralmente aparecem entre 2 a 4 semanas, dependendo da estratégia. Campanhas de tráfego pago mostram resultados mais rápidos, enquanto SEO requer mais tempo. Trabalhamos com metas mensuráveis para acompanhar seu progresso constantemente.</p>
-                    </div>
-                </div>
+  <a
+    href="https://wa.me/5563981298018?text=Olá%20Projex!%20Gostaria%20de%20conhecer%20as%20soluções%20digitais."
+    target="_blank"
+    rel="noopener noreferrer"
+    class="whatsapp-float"
+    aria-label="Falar com a Projex pelo WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
-                <!-- FAQ Item 2 -->
-                <div class="bg-gray-900/50 border border-yellow-600/30 rounded-lg overflow-hidden">
-                    <button class="faq-toggle w-full px-6 py-4 flex justify-between items-center hover:bg-gray-800/50 transition" data-faq="faq-2">
-                        <h3 class="text-white font-semibold text-lg text-left">Qual é o investimento mínimo?</h3>
-                        <i class="fas fa-chevron-down text-yellow-600 transition-transform duration-300"></i>
-                    </button>
-                    <div id="faq-2" class="faq-content hidden px-6 pb-4 text-gray-300 border-t border-yellow-600/20">
-                        <p>Não temos um valor mínimo fixo. Trabalhos personalizados de acordo com o orçamento e objetivos do seu negócio. Oferecemos planos a partir de investimentos acessíveis para pequenos negócios até soluções premium. Agendamos uma consulta para conhecer suas necessidades.</p>
-                    </div>
-                </div>
 
-                <!-- FAQ Item 3 -->
-                <div class="bg-gray-900/50 border border-yellow-600/30 rounded-lg overflow-hidden">
-                    <button class="faq-toggle w-full px-6 py-4 flex justify-between items-center hover:bg-gray-800/50 transition" data-faq="faq-3">
-                        <h3 class="text-white font-semibold text-lg text-left">Vocês trabalham com meu segmento?</h3>
-                        <i class="fas fa-chevron-down text-yellow-600 transition-transform duration-300"></i>
-                    </button>
-                    <div id="faq-3" class="faq-content hidden px-6 pb-4 text-gray-300 border-t border-yellow-600/20">
-                        <p>Sim! Temos experiência em diversos segmentos: varejo, serviços, consultoria, e-commerce, saúde, educação e muito mais. Cada negócio tem suas particularidades e criamos estratégias específicas para o seu ramo. Fale conosco e discutimos como podemos ajudar.</p>
-                    </div>
-                </div>
+  <!-- =========================================================
+       MODAL DE SERVIÇOS
+  ========================================================== -->
 
-                <!-- FAQ Item 4 -->
-                <div class="bg-gray-900/50 border border-yellow-600/30 rounded-lg overflow-hidden">
-                    <button class="faq-toggle w-full px-6 py-4 flex justify-between items-center hover:bg-gray-800/50 transition" data-faq="faq-4">
-                        <h3 class="text-white font-semibold text-lg text-left">Como funciona o acompanhamento e relatórios?</h3>
-                        <i class="fas fa-chevron-down text-yellow-600 transition-transform duration-300"></i>
-                    </button>
-                    <div id="faq-4" class="faq-content hidden px-6 pb-4 text-gray-300 border-t border-yellow-600/20">
-                        <p>Você recebe relatórios detalhados mensalmente com todas as métricas importantes: alcance, engajamento, conversões, ROI e muito mais. Realizamos reuniões periódicas para revisar dados e ajustar estratégias. Transparência total é nosso compromisso.</p>
-                    </div>
-                </div>
+  <div
+    class="modal"
+    id="serviceModal"
+    aria-hidden="true"
+  >
 
-                <!-- FAQ Item 5 -->
-                <div class="bg-gray-900/50 border border-yellow-600/30 rounded-lg overflow-hidden">
-                    <button class="faq-toggle w-full px-6 py-4 flex justify-between items-center hover:bg-gray-800/50 transition" data-faq="faq-5">
-                        <h3 class="text-white font-semibold text-lg text-left">Posso cancelar a qualquer momento?</h3>
-                        <i class="fas fa-chevron-down text-yellow-600 transition-transform duration-300"></i>
-                    </button>
-                    <div id="faq-5" class="faq-content hidden px-6 pb-4 text-gray-300 border-t border-yellow-600/20">
-                        <p>Sim, você pode cancelar com 30 dias de antecedência. Porém, recomendamos manter os serviços por pelo menos 3 meses para que as estratégias tenham tempo de gerar resultados significativos. Raramente nossos clientes saem porque veem realmente os resultados.</p>
-                    </div>
-                </div>
+    <div class="modal-overlay" data-close-modal></div>
 
-                <!-- FAQ Item 6 -->
-                <div class="bg-gray-900/50 border border-yellow-600/30 rounded-lg overflow-hidden">
-                    <button class="faq-toggle w-full px-6 py-4 flex justify-between items-center hover:bg-gray-800/50 transition" data-faq="faq-6">
-                        <h3 class="text-white font-semibold text-lg text-left">Vou ter um gestor dedicado?</h3>
-                        <i class="fas fa-chevron-down text-yellow-600 transition-transform duration-300"></i>
-                    </button>
-                    <div id="faq-6" class="faq-content hidden px-6 pb-4 text-gray-300 border-t border-yellow-600/20">
-                        <p>Sim! Cada cliente recebe um gestor dedicado que conhece sua marca, objetivos e mercado. Essa pessoa será seu ponto de contato principal para qualquer dúvida, decisão ou ajuste nas estratégias. Continuidade e relacionamento forte fazem parte da nossa filosofia.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div
+      class="modal-content"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="serviceModalTitle"
+    >
 
-    <!-- Footer -->
-    <a href="https://wa.me/5563981298018" target="_blank" aria-label="WhatsApp" class="fixed right-5 bottom-5 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-2xl p-4 flex items-center justify-center gap-3 transition">
-        <i class="fab fa-whatsapp text-2xl"></i>
-        <span class="hidden sm:inline font-semibold">WhatsApp</span>
-    </a>
+      <button
+        class="modal-close"
+        type="button"
+        aria-label="Fechar"
+        data-close-modal
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </button>
 
-    <footer class="py-12 px-6 border-t border-yellow-600/20">
-        <div class="max-w-7xl mx-auto text-center">
-            <div class="mb-6">
-                <h3 class="text-white font-display text-xl mb-2">Carol Carvalho</h3>
-                <p class="text-gray-400 text-sm">Assessoria e Projetos | Presença digital que gera resultado</p>
-            </div>
-            <p class="text-gray-500 text-xs">&copy; 2026 Carol Carvalho Assessoria e Projetos. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+      <span
+        class="modal-kicker"
+        id="serviceModalKicker"
+      >
+        SOLUÇÃO PROJEX
+      </span>
 
-    <script>
-        const serviceDetails = {
-            'trafego-pago': {
-                title: 'Tráfego Pago e Marketing de Conteúdo',
-                description: 'Campanhas no Meta Ads e Google Ads combinadas com uma estratégia de conteúdo para atrair, envolver e converter os clientes certos.',
-                bullets: [
-                    'Planejamento de campanhas no Meta Ads e Google Ads',
-                    'Segmentação assertiva e otimização de anúncios',
-                    'Planejamento editorial e pautas estratégicas',
-                    'Criação de conteúdos para relacionamento e autoridade',
-                    'Integração entre conteúdo, anúncios e conversão',
-                    'Relatórios claros de alcance, leads e ROI'
-                ]
-            },
-            'sites-landing-pages': {
-                title: 'Sites & Landing Pages',
-                description: 'Websites profissionais e landing pages que convertem visitantes em leads por meio de design funcional e copy persuasiva.',
-                bullets: [
-                    'Design responsivo e moderno',
-                    'Foco em conversão e usabilidade',
-                    'Integração com formulários e métricas'
-                ]
-            },
-            'seo-gmn': {
-                title: 'SEO Local & GMN',
-                description: 'Seu negócio aparecendo nas buscas da sua cidade, com o Google Meu Negócio configurado e otimizado.',
-                bullets: [
-                    'Melhoria de SEO on-page',
-                    'Otimização de perfil GMN',
-                    'Estratégias para buscas locais'
-                ]
-            },
-            'ga4-rastreamento': {
-                title: 'GA4 & Rastreamento',
-                description: 'Configuramos o Google Analytics 4 e as ferramentas de rastreamento para medir a origem dos acessos, o comportamento dos visitantes e as conversões do seu negócio.',
-                bullets: [
-                    'Configuração do Google Analytics 4',
-                    'Instalação e revisão de tags e eventos',
-                    'Rastreamento de formulários, cliques e conversões',
-                    'Definição de metas e indicadores de acompanhamento',
-                    'Integração com Google Tag Manager e Search Console',
-                    'Auditoria e melhoria da qualidade dos dados'
-                ]
-            },
-            'relatorios-performance': {
-                title: 'Relatórios de Performance',
-                description: 'Painel visual no Looker Studio e relatório mensal em PDF para transformar dados de marketing em informações claras e apoiar decisões melhores.',
-                bullets: [
-                    'Painel visual e interativo no Looker Studio',
-                    'Relatório mensal em PDF',
-                    'Acompanhamento de alcance, tráfego e conversões',
-                    'Análise de campanhas e canais de aquisição',
-                    'Comparação de metas e evolução dos indicadores',
-                    'Identificação de oportunidades de melhoria',
-                    'Recomendações práticas para os próximos passos'
-                ]
-            },
-            'implementacao-crm': {
-                title: 'Implementação de CRM',
-                description: 'Estruturamos o CRM para organizar contatos, etapas de vendas e tarefas, dando mais clareza para o atendimento e para o crescimento do negócio.',
-                bullets: [
-                    'Mapeamento do processo comercial e de atendimento',
-                    'Configuração do CRM conforme a rotina da empresa',
-                    'Criação de etapas, campos e pipelines de vendas',
-                    'Organização e importação da base de contatos',
-                    'Automação de tarefas e follow-ups',
-                    'Treinamento para uso da equipe e acompanhamento dos resultados'
-                ]
+      <h2 id="serviceModalTitle">
+        Solução
+      </h2>
+
+      <p id="serviceModalDescription">
+      </p>
+
+      <div
+        class="modal-list"
+        id="serviceModalList"
+      >
+      </div>
+
+      <a
+        href="https://wa.me/5563981298018"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="button button-primary modal-button"
+      >
+        Conversar sobre esta solução
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================================================
+       JAVASCRIPT
+  ========================================================== -->
+
+  <script>
+
+    /*
+     * ============================================================
+     * MENU MOBILE
+     * ============================================================
+     */
+
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    if (menuToggle && mobileMenu) {
+
+      menuToggle.addEventListener("click", () => {
+
+        const isOpen = mobileMenu.classList.toggle("active");
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          isOpen ? "true" : "false"
+        );
+
+        const icon = menuToggle.querySelector("i");
+
+        if (icon) {
+
+          icon.className = isOpen
+            ? "fa-solid fa-xmark"
+            : "fa-solid fa-bars";
+
+        }
+
+      });
+
+
+      mobileMenu.querySelectorAll("a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+          mobileMenu.classList.remove("active");
+
+          menuToggle.setAttribute(
+            "aria-expanded",
+            "false"
+          );
+
+          const icon = menuToggle.querySelector("i");
+
+          if (icon) {
+            icon.className = "fa-solid fa-bars";
+          }
+
+        });
+
+      });
+
+    }
+
+
+    /*
+     * ============================================================
+     * FAQ
+     * ============================================================
+     */
+
+    const faqQuestions = document.querySelectorAll(".faq-question");
+
+    faqQuestions.forEach(question => {
+
+      question.addEventListener("click", () => {
+
+        const item = question.closest(".faq-item");
+
+        const answer = item.querySelector(".faq-answer");
+
+        const isOpen =
+          item.classList.contains("active");
+
+        document
+          .querySelectorAll(".faq-item.active")
+          .forEach(openItem => {
+
+            if (openItem !== item) {
+
+              openItem.classList.remove("active");
+
+              const openQuestion =
+                openItem.querySelector(".faq-question");
+
+              const openAnswer =
+                openItem.querySelector(".faq-answer");
+
+              openQuestion.setAttribute(
+                "aria-expanded",
+                "false"
+              );
+
+              openAnswer.style.maxHeight = null;
+
             }
-        };
 
-        const modal = document.getElementById('service-modal');
-        const modalTitle = document.getElementById('service-modal-title');
-        const modalDescription = document.getElementById('service-modal-description');
-        const modalBullets = document.getElementById('service-modal-bullets');
-        const modalClose = document.getElementById('service-modal-close');
+          });
 
-        document.querySelectorAll('[data-service]').forEach(button => {
-            button.addEventListener('click', () => {
-                const key = button.getAttribute('data-service');
-                const detail = serviceDetails[key];
-                if (!detail) return;
 
-                modalTitle.textContent = detail.title;
-                modalDescription.textContent = detail.description;
-                modalBullets.innerHTML = detail.bullets.map(item => `<li>${item}</li>`).join('');
-                modal.classList.remove('hidden');
-                modal.classList.add('flex');
+        if (isOpen) {
+
+          item.classList.remove("active");
+
+          question.setAttribute(
+            "aria-expanded",
+            "false"
+          );
+
+          answer.style.maxHeight = null;
+
+        } else {
+
+          item.classList.add("active");
+
+          question.setAttribute(
+            "aria-expanded",
+            "true"
+          );
+
+          answer.style.maxHeight =
+            answer.scrollHeight + "px";
+
+        }
+
+      });
+
+    });
+
+
+    /*
+     * ============================================================
+     * DADOS DAS SOLUÇÕES
+     * ============================================================
+     */
+
+    const serviceData = {
+
+      atrair: {
+
+        kicker: "01 • ATRair",
+
+        title: "Performance & Tráfego",
+
+        description:
+          "Estratégias de aquisição digital para colocar sua empresa diante das pessoas certas e transformar investimento em dados, oportunidades e aprendizado.",
+
+        items: [
+
+          "Planejamento de campanhas",
+
+          "Meta Ads",
+
+          "Google Ads",
+
+          "Estratégias de aquisição",
+
+          "Segmentação de públicos",
+
+          "Análise de desempenho",
+
+          "Otimização contínua"
+
+        ]
+
+      },
+
+
+      conectar: {
+
+        kicker: "02 • CONECTAR",
+
+        title: "Presença & Estratégia Digital",
+
+        description:
+          "Construção de uma presença digital organizada, estratégica e coerente com o posicionamento da empresa.",
+
+        items: [
+
+          "Estratégia digital",
+
+          "SEO",
+
+          "Google e presença local",
+
+          "Sites e landing pages",
+
+          "Estratégia de conteúdo",
+
+          "Organização da presença digital",
+
+          "Análise de oportunidades"
+
+        ]
+
+      },
+
+
+      otimizar: {
+
+        kicker: "03 • OTIMIZAR",
+
+        title: "Tecnologia & Automação",
+
+        description:
+          "Tecnologia aplicada aos processos do negócio para reduzir tarefas manuais, organizar informações e melhorar a eficiência da operação digital.",
+
+        items: [
+
+          "Automação de processos",
+
+          "Inteligência artificial",
+
+          "Implementação de CRM",
+
+          "Integrações",
+
+          "Google Analytics",
+
+          "Rastreamento de dados",
+
+          "Soluções digitais personalizadas"
+
+        ]
+
+      }
+
+    };
+
+
+    /*
+     * ============================================================
+     * MODAL DE SERVIÇOS
+     * ============================================================
+     */
+
+    const serviceModal =
+      document.getElementById("serviceModal");
+
+    const serviceButtons =
+      document.querySelectorAll(".service-button");
+
+    const modalTitle =
+      document.getElementById("serviceModalTitle");
+
+    const modalKicker =
+      document.getElementById("serviceModalKicker");
+
+    const modalDescription =
+      document.getElementById("serviceModalDescription");
+
+    const modalList =
+      document.getElementById("serviceModalList");
+
+
+    function openServiceModal(serviceKey) {
+
+      const service =
+        serviceData[serviceKey];
+
+      if (!service) return;
+
+      modalKicker.textContent =
+        service.kicker;
+
+      modalTitle.textContent =
+        service.title;
+
+      modalDescription.textContent =
+        service.description;
+
+      modalList.innerHTML = "";
+
+      service.items.forEach(item => {
+
+        const element =
+          document.createElement("div");
+
+        element.className =
+          "modal-list-item";
+
+        element.innerHTML = `
+          <i class="fa-solid fa-check"></i>
+          <span>${item}</span>
+        `;
+
+        modalList.appendChild(element);
+
+      });
+
+
+      serviceModal.classList.add("active");
+
+      serviceModal.setAttribute(
+        "aria-hidden",
+        "false"
+      );
+
+      document.body.classList.add(
+        "modal-open"
+      );
+
+    }
+
+
+    function closeServiceModal() {
+
+      serviceModal.classList.remove(
+        "active"
+      );
+
+      serviceModal.setAttribute(
+        "aria-hidden",
+        "true"
+      );
+
+      document.body.classList.remove(
+        "modal-open"
+      );
+
+    }
+
+
+    serviceButtons.forEach(button => {
+
+      button.addEventListener("click", () => {
+
+        const serviceKey =
+          button.dataset.service;
+
+        openServiceModal(serviceKey);
+
+      });
+
+    });
+
+
+    document
+      .querySelectorAll("[data-close-modal]")
+      .forEach(element => {
+
+        element.addEventListener(
+          "click",
+          closeServiceModal
+        );
+
+      });
+
+
+    document.addEventListener(
+      "keydown",
+      event => {
+
+        if (
+          event.key === "Escape" &&
+          serviceModal.classList.contains("active")
+        ) {
+
+          closeServiceModal();
+
+        }
+
+      }
+    );
+
+
+    /*
+     * ============================================================
+     * ANO AUTOMÁTICO
+     * ============================================================
+     */
+
+    const currentYear =
+      document.getElementById("currentYear");
+
+    if (currentYear) {
+
+      currentYear.textContent =
+        new Date().getFullYear();
+
+    }
+
+
+    /*
+     * ============================================================
+     * HEADER AO ROLAR
+     * ============================================================
+     */
+
+    const header =
+      document.querySelector(".site-header");
+
+    window.addEventListener("scroll", () => {
+
+      if (!header) return;
+
+      if (window.scrollY > 40) {
+
+        header.classList.add(
+          "scrolled"
+        );
+
+      } else {
+
+        header.classList.remove(
+          "scrolled"
+        );
+
+      }
+
+    });
+
+
+    /*
+     * ============================================================
+     * SCROLL SUAVE
+     * ============================================================
+     */
+
+    document
+      .querySelectorAll('a[href^="#"]')
+      .forEach(anchor => {
+
+        anchor.addEventListener(
+          "click",
+          function(event) {
+
+            const targetId =
+              this.getAttribute("href");
+
+            if (
+              !targetId ||
+              targetId === "#"
+            ) {
+              return;
+            }
+
+            const target =
+              document.querySelector(
+                targetId
+              );
+
+            if (!target) return;
+
+            event.preventDefault();
+
+            const headerHeight =
+              header
+                ? header.offsetHeight
+                : 0;
+
+            const targetPosition =
+              target.getBoundingClientRect().top +
+              window.scrollY -
+              headerHeight -
+              20;
+
+            window.scrollTo({
+
+              top: targetPosition,
+
+              behavior: "smooth"
+
             });
-        });
 
-        modalClose.addEventListener('click', () => {
-            modal.classList.add('hidden');
-            modal.classList.remove('flex');
-        });
+          }
+        );
 
-        modal.addEventListener('click', event => {
-            if (event.target === modal) {
-                modal.classList.add('hidden');
-                modal.classList.remove('flex');
-            }
-        });
+      });
 
-        // FAQ Accordion
-        document.querySelectorAll('.faq-toggle').forEach(button => {
-            button.addEventListener('click', () => {
-                const faqId = button.getAttribute('data-faq');
-                const faqContent = document.getElementById(faqId);
-                const icon = button.querySelector('i');
-                const isHidden = faqContent.classList.contains('hidden');
+  </script>
 
-                // Fechar todos os outros
-                document.querySelectorAll('.faq-content').forEach(content => {
-                    content.classList.add('hidden');
-                });
-                document.querySelectorAll('.faq-toggle i').forEach(i => {
-                    i.style.transform = 'rotate(0deg)';
-                });
-
-                // Abrir o atual
-                if (isHidden) {
-                    faqContent.classList.remove('hidden');
-                    icon.style.transform = 'rotate(180deg)';
-                }
-            });
-        });
-
-        // Portfolio Modal
-        const portfolioDetails = {
-            'ecommerce': {
-                title: 'E-commerce B2B',
-                description: 'Campanha completa de Google Ads e remarketing para loja de produtos industriais. Otimizamos landing pages, segmentação de público-alvo e estratégia de lances.',
-                result: '+340%',
-                duration: '4 meses',
-                image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22400%22%3E%3Crect fill=%22%23EFECE6%22 width=%22800%22 height=%22400%22/%3E%3Ctext x=%22400%22 y=%22200%22 font-size=%2232%22 fill=%22%23A28168%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EGráfico: Crescimento de Vendas 340%25%3C/text%3E%3C/svg%3E'
-            },
-            'salao': {
-                title: 'Salão de Beleza',
-                description: 'Gestão completa de redes sociais (Instagram) com conteúdo estratégico e otimização de Google Meu Negócio. Resultados em agendamentos online e foot traffic.',
-                result: '+280%',
-                duration: '3 meses',
-                image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22400%22%3E%3Crect fill=%22%23EFECE6%22 width=%22800%22 height=%22400%22/%3E%3Ctext x=%22400%22 y=%22200%22 font-size=%2232%22 fill=%22%23A28168%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EGráfico: Agendamentos +280%25%3C/text%3E%3C/svg%3E'
-            },
-            'academia': {
-                title: 'Academia de Fitness',
-                description: 'Tráfego pago em Google Ads + campanha de email marketing e SMS. Segmentação por interesse em fitness e retargeting de visitantes do site.',
-                result: '+195%',
-                duration: '3 meses',
-                image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22400%22%3E%3Crect fill=%22%23EFECE6%22 width=%22800%22 height=%22400%22/%3E%3Ctext x=%22400%22 y=%22200%22 font-size=%2232%22 fill=%22%23A28168%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EGráfico: Leads Gerados +195%25%3C/text%3E%3C/svg%3E'
-            },
-            'restaurante': {
-                title: 'Restaurante Local',
-                description: 'Campanha de Instagram Ads com foco em localização + otimização completa de Google Meu Negócio. Aumento massivo em buscas locais e reservas.',
-                result: '+420%',
-                duration: '2 meses',
-                image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22400%22%3E%3Crect fill=%22%23EFECE6%22 width=%22800%22 height=%22400%22/%3E%3Ctext x=%22400%22 y=%22200%22 font-size=%2232%22 fill=%22%23A28168%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EGráfico: Buscas Locais +420%25%3C/text%3E%3C/svg%3E'
-            },
-            'agencia': {
-                title: 'Agência Digital',
-                description: 'Redesign completo de site + implementação de CRM + estratégia de inbound marketing. Aumento significativo em contatos qualificados para vendas.',
-                result: '+510%',
-                duration: '5 meses',
-                image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22400%22%3E%3Crect fill=%22%23EFECE6%22 width=%22800%22 height=%22400%22/%3E%3Ctext x=%22400%22 y=%22200%22 font-size=%2232%22 fill=%22%23A28168%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EGráfico: Contatos +510%25%3C/text%3E%3C/svg%3E'
-            },
-            'consultoria': {
-                title: 'Consultoria Empresarial',
-                description: 'Campanha em LinkedIn Ads + email marketing segmentado. Geração de leads B2B de alta qualidade para serviços de consultoria empresarial.',
-                result: '+650%',
-                duration: '6 meses',
-                image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22400%22%3E%3Crect fill=%22%23EFECE6%22 width=%22800%22 height=%22400%22/%3E%3Ctext x=%22400%22 y=%22200%22 font-size=%2232%22 fill=%22%23A28168%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EGráfico: Leads B2B +650%25%3C/text%3E%3C/svg%3E'
-            }
-        };
-
-        const portfolioModal = document.getElementById('portfolio-modal');
-        const portfolioModalTitle = document.getElementById('portfolio-modal-title');
-        const portfolioModalDescription = document.getElementById('portfolio-modal-description');
-        const portfolioModalContent = document.getElementById('portfolio-modal-content');
-        const portfolioModalResult = document.getElementById('portfolio-modal-result');
-        const portfolioModalDuration = document.getElementById('portfolio-modal-duration');
-        const portfolioModalClose = document.getElementById('portfolio-modal-close');
-
-        document.querySelectorAll('[data-portfolio]').forEach(button => {
-            button.addEventListener('click', () => {
-                const key = button.getAttribute('data-portfolio');
-                const detail = portfolioDetails[key];
-                if (!detail) return;
-
-                portfolioModalTitle.textContent = detail.title;
-                portfolioModalDescription.textContent = detail.description;
-                portfolioModalResult.textContent = detail.result;
-                portfolioModalDuration.textContent = detail.duration;
-                portfolioModalContent.innerHTML = `<img src="${detail.image}" alt="${detail.title}" class="w-full h-auto">`;
-                
-                portfolioModal.classList.remove('hidden');
-                portfolioModal.classList.add('flex');
-            });
-        });
-
-        portfolioModalClose.addEventListener('click', () => {
-            portfolioModal.classList.add('hidden');
-            portfolioModal.classList.remove('flex');
-        });
-
-        portfolioModal.addEventListener('click', event => {
-            if (event.target === portfolioModal) {
-                portfolioModal.classList.add('hidden');
-                portfolioModal.classList.remove('flex');
-            }
-        });
-    </script>
 </body>
 </html>
