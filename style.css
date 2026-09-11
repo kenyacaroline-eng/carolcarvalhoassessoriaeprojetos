@@ -522,7 +522,7 @@ p {
   margin-bottom: 28px;
 
   font-size:
-    clamp(3.1rem, 6vw, 5.5rem);
+    clamp(2.7rem, 4.5vw, 4.4rem);
 
   color: var(--white);
 
@@ -2088,6 +2088,12 @@ p {
 
 }
 
+.about-grid-single {
+
+  grid-template-columns: 1fr;
+
+}
+
 .about-visual {
 
   position: relative;
@@ -2694,7 +2700,7 @@ p {
   gap: 50px;
 
   padding:
-    75px 0;
+    45px 0;
 
 }
 
@@ -2768,7 +2774,7 @@ p {
   gap: 20px;
 
   padding:
-    22px 0;
+    14px 0;
 
   border-top:
     1px solid var(--border);
@@ -3145,6 +3151,13 @@ p {
 
   }
 
+  .services-grid {
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+  }
+
   .solution-card:last-child {
 
     grid-column:
@@ -3300,7 +3313,7 @@ p {
   .hero-content h1 {
 
     font-size:
-      clamp(2.8rem, 8vw, 4.5rem);
+      clamp(2.5rem, 7vw, 3.8rem);
 
   }
 
@@ -3361,6 +3374,12 @@ p {
 
   }
 
+  .contact-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
   .cta-box {
 
     flex-direction: column;
@@ -3407,6 +3426,33 @@ p {
 
 @media (max-width: 600px) {
 
+  html,
+  body {
+    width: 100%;
+    min-width: 0;
+    overflow-x: hidden;
+  }
+
+  .container,
+  .hero-grid,
+  .about-grid,
+  .contact-grid,
+  .projects-grid,
+  .solution-grid,
+  .services-grid {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .hero-grid > *,
+  .about-grid > *,
+  .contact-grid > *,
+  .projects-grid > *,
+  .solution-grid > *,
+  .services-grid > * {
+    min-width: 0;
+  }
+
   .container {
 
     width:
@@ -3439,7 +3485,7 @@ p {
     margin-bottom: 22px;
 
     font-size:
-      clamp(2.55rem, 13vw, 3.6rem);
+      clamp(2.25rem, 10vw, 3.1rem);
 
   }
 
@@ -3498,9 +3544,9 @@ p {
 
   .hero-image-wrapper {
 
-    width: calc(100% - 25px);
+    width: 100%;
 
-    margin-left: 12px;
+    margin-left: 0;
 
   }
 
@@ -3560,6 +3606,18 @@ p {
   }
 
   .solution-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .services-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .field-row.two-columns {
 
     grid-template-columns: 1fr;
 
@@ -3750,7 +3808,7 @@ p {
     gap: 40px 25px;
 
     padding:
-      60px 0;
+      35px 0;
 
   }
 
@@ -3773,11 +3831,15 @@ p {
 
   .whatsapp-float {
 
+    z-index: 1100;
+
     width: 51px;
     height: 51px;
 
     right: 16px;
     bottom: 16px;
+
+    display: flex;
 
     font-size: 1.25rem;
 
@@ -3997,4 +4059,93 @@ p {
 
 .footer-bottom {
   border-top-color: rgba(5, 5, 16, 0.1);
+}
+
+@keyframes cta-pulse {
+  0%,
+  100% {
+    box-shadow: 0 8px 22px rgba(236, 72, 153, 0.18);
+  }
+
+  50% {
+    box-shadow: 0 10px 30px rgba(236, 72, 153, 0.34);
+  }
+}
+
+.button,
+.nav-cta,
+.modal-button {
+  position: relative;
+  isolation: isolate;
+  animation: cta-pulse 1.8s ease-in-out infinite;
+}
+
+.button::after,
+.nav-cta::after,
+.modal-button::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  z-index: -1;
+  border-radius: inherit;
+  background: radial-gradient(circle, rgba(236, 72, 153, 0.34), transparent 68%);
+  filter: blur(8px);
+  opacity: 0.3;
+  pointer-events: none;
+  animation: cta-light 1.8s ease-in-out infinite;
+}
+
+@keyframes cta-light {
+  0%,
+  100% {
+    opacity: 0.18;
+    transform: scale(0.98);
+  }
+
+  50% {
+    opacity: 0.48;
+    transform: scale(1.03);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button,
+  .nav-cta,
+  .modal-button {
+    animation: none;
+  }
+
+  .button::after,
+  .nav-cta::after,
+  .modal-button::after {
+    animation: none;
+    opacity: 0.35;
+  }
+}
+
+@media (max-width: 850px) {
+  .site-header .menu-toggle {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    color: #050510 !important;
+    background: #FFFFFF !important;
+    border: 1px solid rgba(5, 5, 16, 0.18);
+  }
+
+  .site-header .mobile-menu {
+    background: #FFFFFF !important;
+  }
+
+  .site-header .mobile-menu a {
+    color: #050510 !important;
+    border-color: rgba(5, 5, 16, 0.1) !important;
+  }
+
+  .site-header .mobile-menu a:hover {
+    color: #EC4899 !important;
+    background: rgba(236, 72, 153, 0.06);
+  }
 }
